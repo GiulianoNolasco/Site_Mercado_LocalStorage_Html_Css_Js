@@ -16,7 +16,7 @@
 
   <!-- HEADER #################################################################### -->
 
-  <header>
+  <header class="header">
     <div class="titulo">
       <h1>Mercado - Vendemos alimentos</h1>
 
@@ -126,7 +126,7 @@
             Adicionar <i class="fa-sharp fa-solid fa-cart-shopping"></i>
           </button>
         </div>
-        
+
         <div class="produto descricaoproduto">
           <h2 id="IdProduto8"></h2>
           <div class="produto_8 produtosEfeito ">
@@ -175,7 +175,7 @@
 
       <div class="botaofinalizarDiv">
         <a href="#modalFinalizarCompra">
-          <button id="Finalizar" class="botao">
+          <button id="Finalizar" class="botao" onclick="teste()">
             Finalizar compra <i class="fa-sharp fa-solid fa-cart-shopping"></i>
           </button>
         </a>
@@ -185,22 +185,23 @@
 
   <!--  ############################# MODAL ############################# -->
 
-  <div id="modalFinalizarCompra" class="modal">
+  <modal id="modalFinalizarCompra" class="modal">
     <div class="modalTela">
-      <div class="saldosh2">
+      <div class="saldosh2modal">
         <h1>Compra Finalizada</h1>
         <h1>Com Sucesso!</h1>
       </div>
-      <div class="saldosh2">
+      <div class="saldosh2modal">
         <h1>Obrigado pela preferência!</h1>
       </div>
       <div class="modal__footer">
-        <a href="#"> <button class="botao">Voltar</button> </a>
+        <a href="#"> <button class="botao" onclick="zerarLista()">Voltar</button> </a>
       </div>
     </div>
-  </div>
+  </modal>
 
   <script src="script.js"></script>
+
 </body>
 
 </html>

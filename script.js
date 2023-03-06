@@ -46,7 +46,7 @@ const btnNew = document.querySelector("#btnNew");
 const quantidade = document.querySelector("#quantidade");
 const total = document.querySelector("#total");
 
-let items;
+let items = [];
 // ############################## CADASTRAR PRODUTOS ########################################################
 
 btnProduto1.onclick = () => {
@@ -199,7 +199,9 @@ function aumentaItem(index) {
   loadItens();
 }
 function diminuiItem(index) {
-  items[index].amount--;
+  if (items[index].amount > 0) {
+    items[index].amount--;
+  }
   setItensBD();
   loadItens();
 }
@@ -255,6 +257,13 @@ function getTotals() {
   produtosQtTabela.innerHTML = quantidadeProdutos;
   quantidadeTabela.innerHTML = totalProdutos;
   totalTabela.innerHTML = `R$ ${Math.abs(valorCompraTotal).toFixed(2)}`;
+}
+
+function zerarLista() {
+  items = [];
+
+  setItensBD();
+  loadItens();
 }
 
 const getItensBD = () =>
