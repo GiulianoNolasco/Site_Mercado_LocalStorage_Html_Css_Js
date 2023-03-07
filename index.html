@@ -36,7 +36,7 @@
           <span id="total">0.00</span>
         </div>
         <a href="#modalFinalizarCompra">
-          <button id="Finalizar" class="botao">
+          <button id="modal-btn2" class="botao">
             Finalizar compra <i class="fa-sharp fa-solid fa-cart-shopping"></i>
           </button>
         </a>
@@ -175,7 +175,7 @@
 
       <div class="botaofinalizarDiv">
         <a href="#modalFinalizarCompra">
-          <button id="Finalizar" class="botao" onclick="teste()">
+          <button id="modal-btn" class="botao">
             Finalizar compra <i class="fa-sharp fa-solid fa-cart-shopping"></i>
           </button>
         </a>
@@ -185,20 +185,23 @@
 
   <!--  ############################# MODAL ############################# -->
 
-  <modal id="modalFinalizarCompra" class="modal">
-    <div class="modalTela">
-      <div class="saldosh2modal">
-        <h1>Compra Finalizada</h1>
-        <h1>Com Sucesso!</h1>
-      </div>
-      <div class="saldosh2modal">
-        <h1>Obrigado pela preferência!</h1>
-      </div>
-      <div class="modal__footer">
-        <a href="#"> <button class="botao" onclick="zerarLista()">Voltar</button> </a>
+    <div class="modal">
+      <div class="modalParaCentralizar">
+
+        <div class="modalTela">
+          <div class="saldosh2modal">
+            <h1>Compra Finalizada</h1>
+            <h1>Com Sucesso!</h1>
+          </div>
+          <div class="saldosh2modal">
+            <h1>Obrigado pela preferência!</h1>
+          </div>
+          <div class="modal__footer">
+            <a href="#" class="close-btn"> <button class="botao" onclick="zerarLista()">Voltar</button> </a>
+          </div>
+        </div>
       </div>
     </div>
-  </modal>
 
   <script src="script.js"></script>
 
